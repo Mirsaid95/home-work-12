@@ -1,0 +1,191 @@
+.orbitians{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__image{
+        img{
+            width: 100%;
+        }
+
+    }
+
+    &__timerr{
+        display: none;
+    }
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 30px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+    }
+
+    &__title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &__list{
+        color: #858584;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__timer{
+        width: 100%;
+        img{
+            width: 450px;
+        }
+    }
+
+    &__avatar{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        h6{
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    &__text-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 30px;
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__view{
+        display: flex;
+        gap: 10px;
+    }
+    .fa-globe{
+        color: #858584;
+    }
+
+    &__btns-tags{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__btn-tag{
+        display: inline;
+        font-size: 18px;
+        padding: 15px 30px;
+        background-color: #3B3B3B;
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+@media(min-width: 834px){
+    .orbitians{
+
+        &__timer{
+            display: none;
+        }
+
+        &__timerr{
+            display: block;
+        }
+        
+        &__items{
+            padding: 30px 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        &__item{
+            flex: 1;
+            width: 50%;
+        }
+        
+        &__timerr{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__text-list{
+            text-align: left;
+        }
+        
+    }
+}
+
+@media(min-width: 1000px){
+    .orbitians{
+
+        &__timer{
+            display: none;
+        }
+
+        &__timerr{
+            display: block;
+        }
+        
+        &__items{
+            padding: 30px 120px;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        &__item{
+            flex: 1;
+            
+        }
+        &__title{
+            font-size: 56px;
+        }
+        &__list{
+            font-size: 22px;
+        }
+        
+        &__timerr{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            img{
+                width: 450px;
+            }
+        }
+
+        &__text-list{
+            text-align: left;
+        }
+
+        &__sky-text{
+            width: 60%;
+            font-size: 22px;
+            line-height: 40px;
+        }
+        &__tags{
+            font-size: 22px;
+            color: #858584;
+            font-weight: 400;
+        }
+
+        &__btns-tags{
+            flex-direction: row;
+        }
+        
+    }
+}

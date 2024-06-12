@@ -1,0 +1,64 @@
+.footer{
+    &__nft-items{
+        width: 100%;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        line-height: 40px;
+    }
+    &__nft-items{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__list{
+        color: #858584;
+    }
+    &__btn{
+        padding: 20px 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: #A259FF;
+        font-size: 20px;
+        color: white;
+    }
+
+    &__icon{
+        .fa-brands{
+            color: #858584;
+        }
+    }
+   
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__mail{
+        padding: 20px 30px;
+        border: 1p solid;
+        border: none;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width:970px){
+    .footer{
+        display: flex;
+        gap: 20px;
+
+        &__nft{
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
