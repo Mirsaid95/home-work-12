@@ -470,7 +470,7 @@ body {
   color: white;
   line-height: 40px;
 }
-.footer__nft-items {
+.footer__card {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -478,7 +478,14 @@ body {
 .footer__list {
   color: #858584;
 }
+.footer__icon .fa-brands {
+  color: #858584;
+}
 .footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 20px 30px;
   border: none;
   border-radius: 20px;
@@ -486,20 +493,18 @@ body {
   font-size: 20px;
   color: white;
 }
-.footer__icon .fa-brands {
-  color: #858584;
-}
-.footer__card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 .footer__mail {
   padding: 20px 30px;
   border: 1p solid;
   border: none;
   font-size: 18px;
+  outline: none;
   border-radius: 20px;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (min-width: 970px) {
@@ -507,11 +512,31 @@ body {
     display: flex;
     gap: 20px;
   }
-  .footer__nft {
+  .footer__nft-items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .footer__card {
+    width: 30%;
+    text-align: left;
+  }
+  .footer__form {
+    display: flex;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer__mail {
+    width: 80%;
+    height: 60px;
+  }
+  .footer__btn {
+    width: 30%;
+    height: 60px;
+    padding: 0px 30px;
+    margin-left: -80px;
   }
 }

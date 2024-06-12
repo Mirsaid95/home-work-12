@@ -8,16 +8,27 @@
         color: white;
         line-height: 40px;
     }
-    &__nft-items{
+    &__card{
         display: flex;
         flex-direction: column;
         gap: 25px;
+
     }
 
     &__list{
         color: #858584;
     }
+    
+    &__icon{
+        .fa-brands{
+            color: #858584;
+        }
+    }
     &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         padding: 20px 30px;
         border: none;
         border-radius: 20px;
@@ -26,24 +37,19 @@
         color: white;
     }
 
-    &__icon{
-        .fa-brands{
-            color: #858584;
-        }
-    }
-   
-    &__card{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
     &__mail{
         padding: 20px 30px;
         border: 1p solid;
         border: none;
         font-size: 18px;
+        outline: none;
         border-radius: 20px;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -52,13 +58,35 @@
         display: flex;
         gap: 20px;
 
-        &__nft{
-
+        &__nft-items{
             display: flex;
-            flex-direction: column;
+            flex-direction:row;
             gap: 30px;
             flex-wrap: wrap;
             justify-content: center;
+        }
+        &__card{
+            width: 30%;
+            text-align: left;
+        }
+
+        &__form{
+            display: flex;
+            height: 40%;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        &__mail{
+            width: 80%;
+            height: 60px;
+        }
+
+        &__btn{
+            width: 30%;
+            height: 60px;
+            padding: 0px 30px;
+            margin-left: -80px;
         }
     }
 }
